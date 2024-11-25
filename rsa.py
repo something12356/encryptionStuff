@@ -124,7 +124,7 @@ while True:
     choice = int(input("Type 1 to generate keys, 2 to encrypt a message, 3 to decrypt a message:\n"))
     if choice == 1:
         print("Please wait a bit")
-        with open("billion-primes.txt", "r") as f:
+        with open("primeList.txt", "r") as f:
             primeList = [int(i) for i in f.readlines()[:1000]]
         start = primeList[-1]
         genKeys()
